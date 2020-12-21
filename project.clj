@@ -1,4 +1,4 @@
-(def jetty-version "9.4.35.v20201120")
+(def jetty-version "10.0.0")
 
 (defproject info.sunng/ring-jetty9-adapter "0.14.2-SNAPSHOT"
   :description "Ring adapter for jetty9, which supports websocket and spdy"
@@ -9,7 +9,8 @@
                  [ring/ring-servlet "1.8.1"
                   :exclusions [javax.servlet/servlet-api]]
                  [org.eclipse.jetty/jetty-server ~jetty-version]
-                 [org.eclipse.jetty.websocket/websocket-server ~jetty-version]
+                 [org.eclipse.jetty.websocket/websocket-jetty-common ~jetty-version]
+                 [org.eclipse.jetty.websocket/websocket-jetty-server ~jetty-version]
                  [org.eclipse.jetty.websocket/websocket-servlet ~jetty-version]
                  [org.eclipse.jetty.http2/http2-server ~jetty-version]
                  [org.eclipse.jetty/jetty-alpn-server ~jetty-version]]
