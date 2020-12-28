@@ -13,7 +13,8 @@
                  [org.eclipse.jetty.websocket/websocket-servlet ~jetty-version]
                  [org.eclipse.jetty.http2/http2-server ~jetty-version]
                  [org.eclipse.jetty/jetty-alpn-server ~jetty-version]]
-  :deploy-repositories {"releases" :clojars}
+  :repositories [["releases" {:url "https://repo.clojars.org"
+                              :creds :gpg}]]
   :global-vars {*warn-on-reflection* true}
   :jvm-args ["-Xmx128m"]
   :profiles {:dev {:dependencies [[clj-http "3.10.1"]
