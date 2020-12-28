@@ -1,7 +1,7 @@
 (def jetty-version "9.4.35.v20201120")
 
 (defproject info.sunng/ring-jetty9-adapter "0.14.2"
-  :description "Ring adapter for jetty9, which supports websocket and spdy"
+  :description "Ring adapter for jetty9, which supports websocket and spdy. This is a fork with better ping/pong support.  Follow the upstream commit here: https://github.com/sunng87/ring-jetty9-adapter/pull/55"
   :url "http://github.com/sunng87/ring-jetty9-adapter"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
